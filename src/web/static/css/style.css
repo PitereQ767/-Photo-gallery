@@ -1,0 +1,203 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: #e0f7fa;
+}
+
+header{
+    background-color: #002244;
+    color: white;
+    display: flex;
+    text-align: center;
+    max-width: 83%;
+    margin: auto;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 2.2rem;
+    margin: auto;
+}
+
+nav{
+    width: auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+nav ul li a:hover{
+    transform: scale(1.02); /* Delikatne powiększenie */
+    background-color: #003366;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    background-color: #005599;
+    padding: 0;
+    list-style-type: none;
+    min-width: 150px;
+    z-index: 10;
+}
+
+nav ul li:hover .submenu{
+    display: block;
+}
+
+.submenu li a{
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.submenu li a:hover{
+    background-color: #0066cc;
+}
+
+#home {
+    background-color: #002244; 
+    color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 20px auto; /* Wycentrowanie sekcji */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 1); /* Lekki cień dla efektu głębi */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Płynne przejścia */
+}
+
+/* Stylizacja nagłówka w sekcji */
+#home h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #66b2ff; /* Lżejszy kolor dla nagłówka */
+    margin-bottom: 20px;
+}
+
+/* Styl paragrafu */
+#home p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Animacja podczas najechania myszką */
+#home:hover {
+    transform: scale(1.02); /* Delikatne powiększenie */
+    background-color: #003366; /* Zmiana odcienia tła */
+}
+
+#galeria{
+    background-color: #002244; 
+    color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+#galeria h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #66b2ff; /* Lżejszy kolor dla nagłówka */
+    margin-bottom: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13%;
+}
+.gallery figure{
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img{
+    height: auto;
+    border-radius: 8px;
+    max-width: 100%;
+    flex: 0 0 calc(33% - 13%);
+}
+
+figcaption{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.ranking{
+    background-color: #002244; 
+    color: #ffffff; 
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 1);
+}
+
+.ranking h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: #66b2ff; /* Lżejszy kolor dla nagłówka */
+    margin-bottom: 20px;
+}
+
+table{
+    margin: auto;
+}
+
+th{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+button {
+    background-color: #334e97; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 5px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #5c86d4; /* Jaśniejszy odcień tła */
+    transform: scale(1.05); /* Powiększenie przycisku */
+}
